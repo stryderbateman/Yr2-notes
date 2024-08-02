@@ -23,3 +23,26 @@
 <!-- .map() is an array mthod that will go through each of the items and do a thing -->
 <!-- the nice part of .map( is that it returns a whole new array when it's finsished) -->
 <!-- other methods such as forEach() do not create new arrays and instead just paste content fot the existing array  -->
+<!-- Anatomy of .map() -->
+<!-- let newArray = people.map((person) => {
+    const { name, age, job, shirtColor, drink, pet} = person;
+    }) -->
+    <!-- lastly you need to return the object back from the map. -->
+<!-- let newArray = people.map((person) => {
+    const { name, age, job, shirtColor, drink, pet} = person;
+    }) -->
+<!-- return {...person, shirtColor: 'tie-dye', isNice: 'yes'}; -->
+<!-- .forEach() -->
+<!-- forEach doesn't return an array as an output. -->
+<!-- you have 3 values that you can use to work with
+    vlaue
+    index
+    Array(the entire thing)
+-->
+    <!-- .forEach -->
+<!-- the last export of a for each loop is "undefined" this really messes with returning values -->
+<!-- instead you can have am conditional that acts depending on the values returned
+    counting occurences
+    breaking up the array into smaller arrays
+    printing out every name that starts with A
+-->
