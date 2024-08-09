@@ -8008,5 +8008,5 @@ const totalAge = array.reduce((total, current) => {
 
 const averageAge = totalAge
 const result = averageAge / 1;
- 
+
 console.log(result);

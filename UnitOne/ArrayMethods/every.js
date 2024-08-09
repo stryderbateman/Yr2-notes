@@ -8013,7 +8013,7 @@
         const {age} = person
         return age >= 15 && age <= 30
     }))
-true
+// true
 
 console.log(people.some((person) => {
     const {pet} = person
