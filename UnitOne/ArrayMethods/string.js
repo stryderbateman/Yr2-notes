@@ -247,7 +247,7 @@ const endNumber = ipToNumber(end);
 let newArrray = users.filter(user => {
 const userIPNumber = ipToNumber(user.ip_address);
 return userIPNumber >= startNumber && userIPNumber <= endNumber;
-});
+}); 
 }
 console.log(newArrray);
 /////////////////////////////////////////////////////////////////////////////////////
