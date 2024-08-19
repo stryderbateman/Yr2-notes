@@ -15,7 +15,6 @@ const drinks = [
 ];
 
 let mDrinks = drinks.filter((drink) => drink.startsWith("M"));
-
 console.log(mDrinks);
 
 // Expected Outcome

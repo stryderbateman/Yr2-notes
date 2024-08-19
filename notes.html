@@ -8,15 +8,15 @@
 <!-- The Spread operator -->
 <!-- the spread operator(...) will iterate through and add all values from an array-like object -->
 <!-- book = {
-    title: 'coding',
-    pages: 123,
-    cover: 'hard-cover'
+title: 'coding',
+pages: 123,
+cover: 'hard-cover'
 } -->
 <!-- Book version 2 will have all the same values but we changed pages to 140 and added an author property -->
 <!-- bookV2 = {
-    ...book,
-    pages: 140,
-    author: 'Steve'
+...book,
+pages: 140,
+author: 'Steve'
 } -->
 <!-- Mapping arrays -->
 <!-- when you have an array w/ several items that you want to break down the best way is .map()  -->
@@ -25,31 +25,31 @@
 <!-- other methods such as forEach() do not create new arrays and instead just paste content fot the existing array  -->
 <!-- Anatomy of .map() -->
 <!-- let newArray = people.map((person) => {
-    const { name, age, job, shirtColor, drink, pet} = person;
-    }) -->
-    <!-- lastly you need to return the object back from the map. -->
+const { name, age, job, shirtColor, drink, pet} = person;
+}) -->
+<!-- lastly you need to return the object back from the map. -->
 <!-- let newArray = people.map((person) => {
-    const { name, age, job, shirtColor, drink, pet} = person;
-    }) -->
+const { name, age, job, shirtColor, drink, pet} = person;
+}) -->
 <!-- return {...person, shirtColor: 'tie-dye', isNice: 'yes'}; -->
 <!-- .forEach() -->
 <!-- forEach doesn't return an array as an output. -->
 <!-- you have 3 values that you can use to work with
-    vlaue
-    index
-    Array(the entire thing)
+vlaue
+index
+Array(the entire thing)
 -->
-    <!-- .forEach -->
+<!-- .forEach -->
 <!-- the last export of a for each loop is "undefined" this really messes with returning values -->
 <!-- instead you can have am conditional that acts depending on the values returned
-    counting occurences
-    breaking up the array into smaller arrays
-    printing out every name that starts with A
+counting occurences
+breaking up the array into smaller arrays
+printing out every name that starts with A
 -->
 <!-- .every()
 const numbers = [-1, -2, 20, 40, 50]; -->
 <!-- console.log(
-    numbers.every((num) => num < 100)
+numbers.every((num) => num < 100)
 ); -->
 <!-- .some() -->
 <!-- this is very similar to .every but instead of checking all it checks in there are any that are true -->
@@ -61,19 +61,51 @@ items in yout cart, money raised by the class-->
 <!-- .reduce() Paramaters -->
 <!-- const array = [2,4,6,8,10] -->
 <!-- array.reduce((accumulator, currentValue, currentIndex, array) => {
-    return accumulator + currentValue
+return accumulator + currentValue
 }, 20) -->
 <!-- Reduce has a lot going on there are 5 things that you can use:
 total is a variable that is automatically returned when the method ends -->
 <!-- .reduce() Parameters -->
 <!-- const array = [2,4,6,8,10] -->
 <!-- array.reduce((total, current,index, array) =>
-    {
-        return total + current
-    },20 ) -->
-    <!-- current is a variable referring to value currently being looked at
-    you can choose how this number will affect the total (here it is added.) -->
-    <!-- next is index and array, these are both optional if you dint need them'
-    index tell you the index if the current number -->
-    <!-- lastly is the optional starting value -->
-    <!-- this is outside of the callback function and sets the total value so that you can start at any value -->
+{
+return total + current
+},20 ) -->
+<!-- current is a variable referring to value currently being looked at
+you can choose how this number will affect the total (here it is added.) -->
+<!-- next is index and array, these are both optional if you dint need them'
+index tell you the index if the current number -->
+<!-- lastly is the optional starting value -->
+<!-- this is outside of the callback function and sets the total value so that you can start at any value -->
+<!-- CRUD + Agile Development -->
+<!-- Agile Development -->
+<!-- How to be a better Developer -->
+<!-- Agile Intro -->
+<!-- This is a specific form of development and is currently the most used version accross the world -->
+<!--As the name implies this is a form of development that is flexible so that it can be used for any project  -->
+<!-- This form of development focuses very heavily on the user experience and client collaboration -->
+<!-- the agile values -->
+<!-- The Agile Values -->
+<!-- Individuals and Interactions -->
+<!-- Instead of just focusing on the project and what needs to be done you can focus on the team and how they do it
+if you have a happy team and they are all working together very well then the product will turn out better
+this also goes with the client, if you have a good relantionship with the customer the project has a better chance for success-->
+<!-- The Agile Values -->
+<!-- working software -->
+<!-- while testing and creating your project you should make it available to everyone many older companies would spend their time creating rendered images of the site and typing up instructions on how to use the site you should instead have it up so that people can see and use it while push out consitent updates. -->
+<!-- the Agile Values -->
+<!-- customer collaboration -->
+<!-- By Keeping constant communication with the client and customer you can ensure that you are creating what they want to recieve and what will be best for the users this will also avoid large changes or unfortunate miscommunications at the end of the project. -->
+<!-- The Agile Values -->
+<!-- Responding to change -->
+<!-- unlike other forms of design, agile is based around the idea that at any point the entire projcet and scope can change -->
+<!-- people needs, modern design, softeare and the team you are working with change constantly and your project needs to be ableto change with all of that -->
+<!-- the agile Principals -->
+<!-- these are your 12 commandments while working on your SDLC and you can better believe this will be on your test in some capacity -->
+<!-- your highest priority is to satisfy the customer through early stages and continuous delivery of valueable software
+welcome changing reqs, evel late in development. Agile Processes harness change for the custome's competitve advantage-->
+<!-- deliver working software frequently, from a couple of weeks to a couple of month and as needed. Business people and developers must work together daily throughout the project Build projects around motivated individuals give them the enviroment and support they need, and trust them to get the job done. -->
+<!-- The most efficient and effective methof of conveying info to and within a dev team is face-toface convo -->
+<!-- working software is the primary measure if progress -->
+<!-- agile process promote sustainable dev. the sponsors, devs and users should be able to maintain a constant pace indefinitly -->
+<!-- continous attention to technical excellence and good design enhabce agility  -->

@@ -235,20 +235,25 @@ return user.email.split('@')[1];
 ];
 console.log(newAAArray);
 /////////////////////////////////////////////////////////////////////////////////////
-function ipToNumber(ip) {
-return ip.split('.').reduce((acc, octet) => {
-return (acc << 8) + parseInt(octet, 10);
-}, 0);
-}
-function filterIPByRange(users, start, end) {
-const startNumber = ipToNumber(start);
-const endNumber = ipToNumber(end);
+let filteredUsers = inputData.filter(user => {
+    function ipToNumber(ip) {
+        return ip.split('.').reduce((acc, octet) => (acc << 8) + parseInt(octet), 0);
+    }
 
-let newArrray = users.filter(user => {
-const userIPNumber = ipToNumber(user.ip_address);
-return userIPNumber >= startNumber && userIPNumber <= endNumber;
-}); 
-}
-console.log(newArrray);
+    let startNum = ipToNumber("11.0.0.0");
+    let endNum = ipToNumber("12.0.0.0");
+    let userIPNum = ipToNumber(user.ip_address);
+
+    return userIPNum >= startNum && userIPNum <= endNum;
+});
+
+console.log(filteredUsers);
+
 /////////////////////////////////////////////////////////////////////////////////////
+let fullNamesWithInitials = inputData.map(user => {
+    let initials = user.first_name[0] + user.last_name[0];
+    return user.first_name + ' ' + user.last_name + ' (' + initials + ')';
+});
+
+console.log(fullNamesWithInitials);
 
