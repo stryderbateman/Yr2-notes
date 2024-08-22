@@ -1,0 +1,20 @@
+{
+  "name": "yr2-notes",
+  "version": "1.0.0",
+  "description": "Year2-Notes Node - React",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "Start": "nodemon NodeJS/globals.js"
+  },
+  "keywords": [
+    "Node",
+    "Notes",
+    "JS"
+  ],
+  "author": "stryder bateman <sbateman716@west-mec.org>",
+  "license": "MIT",
+  "dependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

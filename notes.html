@@ -109,3 +109,56 @@ welcome changing reqs, evel late in development. Agile Processes harness change 
 <!-- working software is the primary measure if progress -->
 <!-- agile process promote sustainable dev. the sponsors, devs and users should be able to maintain a constant pace indefinitly -->
 <!-- continous attention to technical excellence and good design enhabce agility  -->
+<!-- 01 Intro to Node -->
+<!-- what is NODEJS -->
+<!-- Node is an enviroment that allows us to run JS outside of the browser built using chromes v8 JS engine Node has a large and great community that is adding to the libraries available. -->
+<!-- Differences from browser to node -->
+<!-- there is no DOM (Dom calls error out) there is no window object to refrence this runs server side apps Great for filesystem (accessing the computer no just the browser) they use CommonJS so we don't need to worry about ES6 or browser compatibility. -->
+<!-- Installing NODEJS -->
+<!-- Node is already installed on these computers -->
+<!-- If you are going to install this on your own computer, you should always use the LTS(Long Term Service). This is b/c it is the stable build what will be updated when needed. -> https://nodejs.org/en -->
+<!-- REPL & CLI -->
+<!-- REPL(Real Eval print loop) is a terminal command that lets us use nodeJS -->
+<!-- CLI(Command Line Interface) is the better way to use node --> 
+<!-- REPL 101 -->
+<!-- REPL is kind of like having a small IDE in your terminal you can create variables and call them in the terminal but this is very inefficient and just for playing arounf to exit REPL we hot Ctrl + C -->
+<!-- CLI -->
+<!-- This is the version that runs js files and compiles them for the terminal -->
+<!-- if you tyoe in `node filename.js` the file will be compiled and run w/o the need for a browser engine -->
+<!-- commands
+Clear 
+cd
+systeminfo
+ping (important info) 
+mkdir 
+echo 
+del -->
+
+<!-- Globals -->
+<!-- Just like JS, there are several global variables that we are able to use anywhere -->
+<!-- For instance `console we don't need to define this, node already knows we call these globals` -->
+<!-- Globals -->
+<!-- here are a few example that you should know -->
+<!-- __dirname (with 2 _'s) path to current directory -->
+<!-- __filename (with 2 _'s) the current file name -->
+<!-- require allows us to use Modules -->
+<!-- module info about the current module -->
+<!-- process info about the env where the program is being executed -->
+<!-- Modules -->
+<!-- Modules are Node's woy if saying files, EVERY .JS FILE IS A MODULE -->
+<!-- ew can use these in ES6 but we import command Node uses 'require' insted of import -->
+<!-- Built in Modules -->
+<!-- There are a lot of built in modules that are useful for different programs we are going to be using 4 main one but you can find more in the docs if you want to make yout own projects (I ENCOURAGE IT) https://nodejs.org/api/documentation.html -->
+<!-- OS module -->
+<!-- The OS module is used to return info on the computer and system info on the PC -->
+<!-- Const os = require('os') -->
+<!-- path module the Path module us used for navigating the dorections and file paths -->
+<!-- this also includes methods that will clean up paths to avoid errors -->
+<!-- const path = Require('path') -->
+<!-- FS Modu;e (file system) -->
+<!-- the file system module is exstensive and allows interaction btwn your code and the files on the PC this had methods to allow reading, writing, cleaning, and combining files (and so much more...) b/c it is so exstensive we only import what we need -->
+<!-- const {readFileSync, writeFileSync } = require('fs') -->
+<!-- HTTP Module -->
+<!-- HTTP is all abt servers and internet protocol -->
+<!-- this library truncates a lot of difficult code into simpler methods and never buffers requests or response, allowing users to stream -->
+<!-- const http = require)('http') -->

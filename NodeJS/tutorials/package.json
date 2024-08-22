@@ -1,0 +1,11 @@
+{
+  "name": "tutorials",
+  "version": "1.0.0",
+  "description": "First node project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "stryder bateman <sbateman716@west-mec.org>",
+  "license": "MIT"
+}
