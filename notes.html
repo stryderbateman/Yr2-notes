@@ -189,3 +189,25 @@ del -->
 <!-- the event loop is akey of how the browser works with async functions and callbacks -->
 <!-- its very hard to explain all this but some guy named phillip roberts does a great job -->
 
+<!-- events -->
+<!-- events are triggered by user input, just like js or html like onClick -->
+<!-- Node uses events very often building modules that handle changes on the page -->
+<!-- in node events are built off of a singular module called the event emitter this module takes in some kind of request and gives back something depending on the parameters
+-->
+<!-- this common evetns are requests and we usea methof call '.on()' for that
+any other module that extends events is also available to use the ',on()' for example the http servers--> 
+<!-- File System Flags -->
+<!-- when creating files sequentially we need to tell node how we want the data exported i.e overwrite append, create, only if it doesn't exist etc... -->
+<!-- here are a few common flags: -->
+<!-- w open file for writing (overwrites the file) -->
+<!-- a open file for apending (adds to end of files) -->
+<!-- r open a file for reading (you cant chanfe the file ehwne younuse the flag) -->
+<!-- Streams -->
+<!-- you have likely heard of streaming tv, movies, and music to your phone or PC -->
+<!-- Streams in NODE JS, enableing efficient data handling by reading or writing input and output sequentially -->
+<!-- we only load 64 kbps (kilobyts per second info at a time so that we can enjot the loaded part while the rest is loading) -->
+<!-- Streaming options -->
+<!-- Just like fs option with flags, there are options with streaming as well. Two highly use options are: -->
+<!-- HighWaterMark -->
+<!-- tells teh stream how many bytes should be in each chunk -->
+<!-- encoding Defines the language, 'UTF8' for example-->
